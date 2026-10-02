@@ -50,6 +50,7 @@ def connect():
 
 def init_db():
     with connect() as conn:
+        conn.execute('SELECT pg_advisory_xact_lock(731904221)')
         conn.execute("""
             CREATE TABLE IF NOT EXISTS incidents (
                 id BIGSERIAL PRIMARY KEY,
