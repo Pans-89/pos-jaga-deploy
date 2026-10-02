@@ -1,0 +1,52 @@
+:root{--paper:#eef2ef;--white:#fcfdfa;--muted:#5f6d66}
+body{background:var(--paper)}
+.login-screen{background:var(--white)}
+.login-aside{background:#172725}
+.aside-grid{background:radial-gradient(ellipse at 70% 42%,#2b4540 0,transparent 52%);opacity:.7}
+.aside-caption{font-size:11px;color:#b5c5ba}
+.aside-caption span:last-child{color:#a3b2a7}
+.system-flow{position:absolute;top:44%;left:50%;transform:translate(-50%,-50%);width:min(calc(100% - 96px),520px)}
+.flow-node{min-height:66px;display:flex;align-items:center;gap:12px;padding:11px 14px;border:1px solid #a9b9a532;border-radius:7px;background:#223432;color:#edf0e7}
+.flow-glyph{width:34px;height:34px;display:grid;place-items:center;border-radius:6px;font:12px var(--mono)}
+.app-glyph{background:#c5e377;color:#172725}.db-glyph{background:#d3dfd8;color:#263d36}.volume-glyph{background:#546b5e;color:white}
+.flow-node b,.flow-node small{display:block}
+.flow-node b{font-size:12px;font-weight:600}
+.flow-node small{font-size:11px;color:#b5c5ba;margin-top:2px}
+.flow-node i{margin-left:auto;font:10px var(--mono);color:#c5e377;font-style:normal}
+.flow-connector{height:36px;display:flex;align-items:center;gap:11px;margin-left:30px}
+.flow-connector span{height:100%;width:1px;background:#c5e37788}
+.flow-connector small{font:10px var(--mono);color:#b5c5ba}
+.login-kicker,.date-line,.nav-heading,.sidebar-foot,.dialog-top{font-size:11px}
+.login-copy,.page-subtitle,.deployment-note p,.empty-state p{color:var(--muted)}
+.login-foot{font-size:11px;color:#626f68}
+.workspace small,.db-status small{font-size:11px;color:#b5c5ba}
+.chevron{color:#b5c5ba}
+.nav-count{font-size:11px}
+.clock{font-size:11px;color:#4e6259}
+.metric-note{font-size:12px;color:#626f68}
+.updated-label{font-size:11px;color:#626f68}
+.updated-label b{font-size:11px;color:#4e6259}
+.filter-tab{font-size:12px}
+.filter-tab span{font-size:10px}
+.search-box input{font-size:12px}
+.service-label{font-size:11px}
+.incident-meta{font-size:11px;color:#626f68}
+.incident-detail{font-size:12px;color:#5f6d66}
+.status-pill{font-size:10px}
+.resolve-button,.resolved-label,.list-foot{font-size:11px}
+.text-button{font-size:12px}
+.activity-copy>span{font-size:11px;color:#617068}
+.activity-copy time{font-size:11px;color:#6f7d75}
+.rail-empty{font-size:12px;color:#5f6d66}
+.deployment-note p{font-size:12px;color:#5f6d66}
+.deployment-note a{font-size:12px}
+.page-footer{font-size:10px;color:#59675f}
+.form-error{font-size:12px}
+.login-aside .orbit,.login-aside .orbit-core{display:none}
+.row-actions{display:flex;align-items:center;gap:12px}
+.row-edit{padding:4px 2px}
+.row-delete{border:0;padding:4px 2px;background:transparent;color:#9b4038;font:600 11px var(--sans);cursor:pointer}
+.row-delete:hover{color:#70251f;text-decoration:underline}
+.row-delete:focus-visible,.row-edit:focus-visible{outline:2px solid #536f40;outline-offset:3px;border-radius:3px}
+.row-actions button:disabled{opacity:.5;cursor:wait}
+@media(max-width:560px){.system-flow{display:none}}
