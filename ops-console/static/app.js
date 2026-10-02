@@ -170,8 +170,8 @@
     }
     dialog.showModal(); setTimeout(() => $('#incident-title').focus(), 40);
   }
-  $('#new-incident').addEventListener('click', openDialog);
-  $('#empty-create').addEventListener('click', openDialog);
+  $('#new-incident').addEventListener('click', () => openDialog());
+  $('#empty-create').addEventListener('click', () => openDialog());
   $('#close-dialog').addEventListener('click', () => dialog.close());
   $('#cancel-dialog').addEventListener('click', () => dialog.close());
   dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
